@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/adminStyle.css">
+</head>
+<body>
+	<div class = "container">
+		<form class = "container-form" action="admin.html" name="Admin">
+			<div class="container-username">
+				<label class = "username-text"for="username"> Username</label>
+				<input class = "username-box"type="text" name="username" placeholder="Enter Username">
+			</div>
+			<div class = "container-password">
+				<label class = "password-text"for="password"> Password</label>
+				<input class = "password-box" type="password" name="password" pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter Password">
+			</div>
+			<div class = "container-button">
+				<input class="button green" type="submit" name="submit" value="Login">
+			</div>
+		</form>
+		<div class = "container-warning">
+			<ul class ="items">
+				<li class="items item-1"> Password should have atleast 8 length</li>
+				<li class="items item-2"> Password should have atleast 1 uppercase</li>
+				<li class="items item-3"> Password should have atleast 1 lowercase</li>
+				<li class="items item-4"> Password should have atleast 1 special symbol</li>
+				<li class="items item-5"> Password should have atleast 1 digit</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+	<footer>
+		<script type="text/javascript" src = "JS/adminJS.js"></script>
+	</footer>
+</html>
