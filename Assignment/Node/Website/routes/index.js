@@ -3,6 +3,11 @@ var path = require("path");
 var app = express();
 var router = express.Router();
 
+router.get('/', (req, res, next)=>{
+	// app.use(express.static(path.join(__dirname, 'views')))
+	res.sendFile(path.join(__dirname + '/../views/index.html'));
+})
+
 
 //middleware use
 const logger = function (req,res,next){
